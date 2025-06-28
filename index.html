@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Rahul 🎉</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#countdown">Countdown</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#funny">Funny</a></li>
+        <li><a href="#message">Message</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="glass" data-aos="zoom-in">
+      <img src="IMG_20250512_131138_494.jpg" alt="Rahul photo" class="avatar" />
+      <h1>🎉 Happy Birthday Rahul! 🎉</h1>
+      <p class="dob">Born 7 Jan 1998 • Level <span id="age"></span></p>
+      <div class="hero‑btns">
+        <button onclick="playMusic()"><i class="fa-solid fa-music"></i> Play Song</button>
+        <button onclick="launchFireworks()"><i class="fa-solid fa-burst"></i> Fireworks</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section id="countdown" class="countdown" data-aos="fade-up">
+    <h2>⏳ Birthday Countdown</h2>
+    <div id="timer">
+      <div><span id="d">0</span><small>Days</small></div>
+      <div><span id="h">0</span><small>Hours</small></div>
+      <div><span id="m">0</span><small>Minutes</small></div>
+      <div><span id="s">0</span><small>Seconds</small></div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="gallery">
+    <h2 data-aos="fade-up">📸 Memory Wall</h2>
+    <div class="grid">
+      <img src="https://source.unsplash.com/400x400/?cake"   alt="https://replit.com/@daysayan60/birthday-wish-website-1#WhatsApp%20Image%202025-06-28%20at%201.43.44%20PM.jpeg" data-aos="flip-left"/>
+      <img src="https://source.unsplash.com/401x400/?funny"  alt="https://replit.com/@daysayan60/birthday-wish-website-1#WhatsApp%20Image%202025-06-28%20at%201.44.13%20PM.jpeg" data-aos="flip-left" data-aos-delay="100"/>
+      <img src="https://source.unsplash.com/402x400/?friends" alt="https://replit.com/@daysayan60/birthday-wish-website-1#WhatsApp%20Image%202025-06-28%20at%201.44.34%20PM.jpeg" data-aos="flip-left" data-aos-delay="200"/>
+      <img src="https://source.unsplash.com/403x400/?party"   alt="https://replit.com/@daysayan60/birthday-wish-website-1#WhatsApp%20Image%202025-06-28%20at%201.45.22%20PM.jpeg" data-aos="flip-left" data-aos-delay="300"/>
+    </div>
+  </section>
+
+  <!-- FUNNY MOMENTS -->
+  <section id="funny" class="gallery" data-aos="fade-up">
+    <h2>😂 Funny Moments</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="IMG_20250512_131138_494.jpg" alt="Funny Moment" />
+        <p class="caption">🕶️ Double Agents on a Secret Snack Mission</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESSAGE -->
+  <section id="message" class="message" data-aos="fade-up">
+    <h2>🥳 A Little Roast & Toast</h2>
+    <p>
+      Old enough to know better, young enough to still do it anyway.<br>
+      <strong>#LivingLegend</strong> 😜
+    </p>
+    <button id="shareBtn"><i class="fa-solid fa-share-nodes"></i> Share this Page</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <p>Made with ❤️ by your favourite human.</p>
+    <div class="socials">
+      <a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/"     target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://youtube.com/"    target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </footer>
+
+  <!-- MODAL POPUP -->
+  <div id="modal" class="modal hidden">
+    <div class="modal‑content glass">
+      <span id="closeModal">&times;</span>
+      <h2>🎊 Surprise! 🎊</h2>
+      <p>Rahul, may your bugs be few and your cakes be huge!</p>
+    </div>
+  </div>
+
+  <!-- LIBRARIES & SCRIPT -->
+  <audio id="song" src="https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav"></audio>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
